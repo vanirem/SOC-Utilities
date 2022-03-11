@@ -35,9 +35,6 @@ for($index; $index -lt $total; $index++ ){
     $signed=Get-AuthenticodeSignature -FilePath $dlls[$index].FileName;
 
 
-
-
-
     if( $signed.Status -ne "Valid"){
 
 
